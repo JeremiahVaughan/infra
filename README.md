@@ -30,3 +30,7 @@ Install:
     - `sudo systemctl status haproxy`
 View logs with:
     - `journalctl -u haproxy`
+
+References:
+    TLS guide: https://dnsprivacy.org/running_a_dns_privacy_server/using_a_tls_proxy/building_haproxy_using_tlsv1_3/
+
