@@ -1,6 +1,8 @@
 Install:
-    - `go install github.com/JeremiahVaughan/infra@latest`
-    - `sudo cp infra.service /etc/systemd/system/infra.service`
-    - `sudo systemctl enable infra.service`
-    - `sudo systemctl start infra.service`
-    - `sudo systemctl status infra.service`
+    - `git clone https://github.com/JeremiahVaughan/infra`
+    - `sudo apt update && sudo apt install haproxy -y`
+    - `sudo cp ./infra.service /etc/systemd/system/infra.service`
+    - `sudo cp ./haproxy.cfg /etc/haproxy/haproxy.cfg`
+    - `sudo systemctl enable haproxy`
+    - `sudo systemctl start haproxy`
+    - `sudo systemctl status haproxy`
