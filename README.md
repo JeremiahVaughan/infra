@@ -25,6 +25,7 @@ Install:
     - `sudo apt update && sudo apt install haproxy -y`
     - `sudo cp ./haproxy.cfg /etc/haproxy/haproxy.cfg`
     - `sudo systemctl enable haproxy`
+    - `sudo systemctl stop haproxy`
     - `sudo systemctl start haproxy`
     - `sudo systemctl status haproxy`
 View logs with:
